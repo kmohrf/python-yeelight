@@ -1,0 +1,25 @@
+Source: python-yeelight
+Section: python
+Priority: optional
+Maintainer: Konrad Mohrfeldt <konrad.mohrfeldt@farbdev.org>
+Build-Depends: debhelper (>= 11), dh-python, python-all, python-setuptools, python3-all, python3-setuptools
+Standards-Version: 4.3.0
+Homepage: https://gitlab.com/stavros/python-yeelight
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.2
+Vcs-Browser: https://gitlab.com/stavros/python-yeelight
+Vcs-Git: https://gitlab.com/stavros/python-yeelight.git
+
+Package: python-yeelight
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Suggests: python-yeelight-doc
+Description: A Python library for controlling YeeLight RGB bulbs.
+ This package installs the library for Python 2.
+
+Package: python3-yeelight
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Suggests: python-yeelight-doc
+Description: A Python library for controlling YeeLight RGB bulbs.
+ This package installs the library for Python 3.
